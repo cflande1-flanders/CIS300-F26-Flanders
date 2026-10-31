@@ -1,0 +1,49 @@
+:root {--text: #CF2ABA; --background: #161616; --primary: #00D084; --secondary: #0693E3; --accent: #FF6900; --red: #CF2E2E; --amber: #FCB900;}
+body {background-color: var(--background); color: var(--text); font-family: IM FELL English, serif; margin: 0; padding: 0 20px;}
+header {position: relative; text-align: center; padding: 2.8em 0; color: var(--text);}
+header img {position: absolute; width: 350px; height: 350px; left: 50%; transform: translateX(-50%); top: 0;}
+h1 {font-family: "gioviale", sans-serif; font-weight: 700; font-style: normal; font-size: 3.5em;}
+.full-title {display: none;}
+.short-title {display: inline;}
+h2 {color: var(--accent); font-size: 1.3em; margin-top: 0;}
+h3 {color: var(--secondary); font-size: 1em; margin-top: 0;}
+h4 {color: var(--accent); font-size: 1em; margin-top: 0;}
+.page-title {text-align: center; color: var(--secondary); font-size: 1.5em; margin-top: 0;}
+.section-label {color: var(--primary); font-size: 1.1em; margin: 0 0 0.5em 0;}
+.columns {display: grid; grid-template-columns: 1fr; gap: 15px; align-items: start;}
+.post-date {color: var(--amber); font-size: 0.6em; float: right;}
+.content-box {border: 1px solid var(--red); padding: 15px; margin-bottom: 15px;}
+nav {text-align: left; padding: 0;}
+nav a {display:block; color: var(--primary); text-decoration: none; margin-bottom: 2em;}
+nav a:visited, nav a:hover, nav a:active {color: var(--primary);}
+main {padding: 0;}
+aside {border: 1px solid var(--primary); padding: 15px;}
+summary {cursor: pointer; text-decoration: underline; list-style: none; text-align: right; color: var(--amber);}
+summary::-webkit-details-marker {display: none;}
+summary .less {display: none;}
+details[open] {display: flex; flex-direction: column;}
+details[open] summary {order: 2;}
+details[open] p {order: 1;}
+details[open] summary .more {display: none;}
+details[open] summary .less {display: inline;}
+.mobile-nav {text-align: left;}
+.mobile-nav summary {text-align: left; color: var(--primary); text-decoration: none;}
+.mobile-nav[open] {display: block;}
+.mobile-nav[open] summary {order: initial;}
+.mobile-nav a {margin: 1em 0;}
+footer {text-align: center; padding: 1em; margin-top: 15px; color: var(--amber);}
+footer a {color: var(--amber);}
+.desktop-nav {display: none;}
+@media (min-width: 600px) {
+.full-title {display: inline;}
+.short-title {display: none;}
+.mobile-nav {display: none;}
+.desktop-nav {display: block;text-align: center;}
+.desktop-nav a {display: inline; margin: 0 0.5em;}
+.columns {grid-template-columns: 3fr 1.5fr;}
+nav {grid-column: 1 / -1;}}
+@media (min-width: 1024px) {
+.columns {grid-template-columns: 140px 1fr 220px;}
+nav {grid-column: auto;}
+.desktop-nav {text-align: left;}
+.desktop-nav a {display: block; margin: 0 0 2em 0;}}
