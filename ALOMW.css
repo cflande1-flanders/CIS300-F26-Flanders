@@ -16,6 +16,9 @@ h4 {color: var(--accent); font-size: 1em; margin-top: 0;}
 .columns {display: grid; grid-template-columns: 1fr; gap: 15px; align-items: start;}
 .post-date {color: var(--amber); font-size: 0.6em; float: right;}
 .content-box {border: 1px solid var(--red); padding: 15px; margin-bottom: 15px;}
+.confirmed-name td {color: var(--amber); font-weight: bold;}
+.confirmed-text {color: var(--amber);}
+.form-confirmation {display: none;}
 nav {text-align: left; padding: 0;}
 nav a {display:block; color: var(--primary); text-decoration: none; margin-bottom: 2em;}
 nav a:visited, nav a:hover, nav a:active {color: var(--primary);}
@@ -25,6 +28,16 @@ aside {border: 1px solid var(--primary); padding: 15px;}
     text-align: center;}
 #forgotten-melody-countdown h2 {margin: 0 0 0.5em 0;}
 #countdown {font-size: 1.3em; margin: 0;}
+#theory-form, #comment-form {display: none;}
+#theory-form form, #comment-form form {display: flex; flex-direction: column; gap: 0.5em; margin-top: 1em;}
+#theory-form input, #theory-form textarea, #comment-form input, #comment-form textarea {background-color: 
+     var(--background); color: var(--text); border: 1px solid var(--secondary); padding: 0.5em; font-family: inherit;
+    font-size: 1em;}
+#theory-form input, #theory-form textarea, #theory-form select, #comment-form input, #comment-form textarea,
+#comment-form select {background-color: var(--background); color: var(--text); border: 1px solid var(--secondary);
+    padding: 0.5em; font-family: inherit; font-size: 1em;}
+#additional-books {display: none; flex-direction: column; gap: 0.5em;}
+#additional-books select, #additional-books input {width: 100%; box-sizing: border-box;}
 summary {cursor: pointer; text-decoration: underline; list-style: none; text-align: right; color:
      var(--amber);}
 summary::-webkit-details-marker {display: none;}
@@ -39,6 +52,10 @@ details[open] summary .less {display: inline;}
 .mobile-nav[open] {display: block;}
 .mobile-nav[open] summary {order: initial;}
 .mobile-nav a {margin: 1em 0;}
+table {width: 100%; border-collapse: collapse; margin-top: 1em;}
+th, td {border: 1px solid #0693E3; padding: 0.5em; text-align: left; vertical-align: top;}
+th {color: var(--accent);}
+td {color: var(--text);}
 footer {text-align: center; padding: 1em; margin-top: 15px; color: var(--amber);}
 footer a {color: var(--amber);}
 .desktop-nav {display: none;}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/ifg0hlt.css">
+    <link rel="stylesheet" href="ALOMW.css">
+    <title>The Suriel | A Library of MAASquerading Wyrds</title>
+</head>
+<body>
+<header>
+    <img src="alomw-logo.png" alt="">
+    <h1>
+        <span class="full-title">A Library of MAASquerading Wyrds</span>
+        <span class="short-title">ALOMW</span>
+    </h1>
+</header>
+<div class="columns">
+    <nav>
+        <details class="mobile-nav">
+            <summary>☰Explore the Library</summary>
+            <a href="index.html">The Main Hall</a>
+            <a href="wyrdnet.html">The Wyrdnet</a>
+            <a href="prythian-archive.html">The Prythian Archive</a>
+            <a href="unmaasking.html">The UnMAASking</a>
+            <a href="suriel.html">The Suriel</a>
+        </details>
+        <div class="desktop-nav">
+            <a href="index.html">The Main Hall</a>
+            <a href="wyrdnet.html">The Wyrdnet</a>
+            <a href="prythian-archive.html">The Prythian Archive</a>
+            <a href="unmaasking.html">The UnMAASking</a>
+            <a href="suriel.html">The Suriel</a>
+        </div>
+    </nav>
+<main>
+    <article class="content-box" id="suriel-content">
+        <h2>The Suriel</h2>
+            <p>Have a Maasverse theory of your own, or something to say about one you've found here? The Suriel is 
+            listening.</p>
+            <p>Share a theory, connection, clue, or question of your own, or leave a comment or feedback about 
+            something already in the Library.</p>
+    <div id="suriel-interface"></div>
+        <h3>Consult the Suriel</h3>
+            <p>What brings you to The Suriel?</p>
+                <label>
+                    <input type="radio" name="surielRoute" value="theory">
+                    I have a theory to share
+                </label>
+                <label>
+                    <input type="radio" name="surielRoute" value="comment">
+                    I have a comment or feedback
+                </label>
+<div id="theory-form">
+    <h3>Share Your Theory</h3>
+        <form id="theorySubmissionForm">
+            <label for="theoryUsername">Username:</label>
+                <input type="text" id="theoryUsername" name="theoryUsername">
+                <label for="theoryEmail">E-mail:</label>
+                    <input type="email" id="theoryEmail" name="theoryEmail">
+                <label for="theoryText">*Theory or Connection:</label>
+                    <textarea id="theoryText" name="theoryText" rows="8" required></textarea>
+                <label for="series1">*Series:</label>
+                    <select id="series1" name="series1" required>
+                        <option value="">Select a series</option>
+                        <option value="acotar">A Court of Thorns and Roses</option>
+                        <option value="tog">Throne of Glass</option>
+                        <option value="cc">Crescent City</option>
+                    </select>
+                <label for="book1">*Book:</label>
+                    <select id="book1" name="book1" required>
+                        <option value="">Select a book</option>
+                    </select>
+                <label for="chapter1">Chapter:</label>
+                    <input type="text" id="chapter1" name="chapter1">
+                <label class="checkbox-label">
+                        <input type="checkbox" id="multipleBooks" name="multipleBooks">
+                        My theory uses information from multiple books
+                </label>
+        <div id="additional-books">
+    <h3>Book 2</h3>
+        <label for="series2">Series:</label>
+            <select id="series2" name="series2">
+                <option value="">Select a series</option>
+                <option value="acotar">A Court of Thorns and Roses</option>
+                <option value="tog">Throne of Glass</option>
+                <option value="cc">Crescent City</option>
+            </select>
+        <label for="book2">Book:</label>
+            <select id="book2" name="book2">
+                <option value="">Select a book</option>
+            </select>
+        <label for="chapter2">Chapter:</label>
+            <input type="text" id="chapter2" name="chapter2">
+    <h3>Book 3</h3>
+        <label for="series3">Series:</label>
+            <select id="series3" name="series3">
+                <option value="">Select a series</option>
+                <option value="acotar">A Court of Thorns and Roses</option>
+                <option value="tog">Throne of Glass</option>
+                <option value="cc">Crescent City</option>
+            </select>
+        <label for="book3">Book:</label>
+            <select id="book3" name="book3">
+                <option value="">Select a book</option>
+            </select>
+        <label for="chapter3">Chapter:</label>
+            <input type="text" id="chapter3" name="chapter3">
+        </div>
+            <label for="theoryEvidence">*Evidence:</label>
+                <textarea id="theoryEvidence" name="theoryEvidence" rows="8" required></textarea>
+            <input type="submit" value="Submit Theory">
+</form>
+<div id="theory-confirmation" class="form-confirmation">
+        <h3>The Suriel has heard you.</h3>
+        <p>Your theory has been submitted to the Library.</p>
+</div>
+</div>
+<div id="comment-form">
+    <h3>Leave a Comment or Feedback</h3>
+    <form id="commentSubmissionForm">
+        <label for="commentUsername">Username:</label>
+            <input type="text" id="commentUsername" name="commentUsername">
+        <label for="commentEmail">E-mail:</label>
+            <input type="email" id="commentEmail" name="commentEmail">
+        <label for="theoryPage">*Page:</label>
+            <select id="theoryPage" name="theoryPage" required>
+                <option value="">Select a page</option>
+                <option value="main">The Main Hall</option>
+                <option value="wyrdnet">The Wyrdnet</option>
+                <option value="prythian">The Prythian Archive</option>
+                <option value="unmaasking">The UnMAASking</option>
+            </select>
+        <label for="theoryDiscussed">*Theory Being Discussed:</label>
+            <select id="theoryDiscussed" name="theoryDiscussed" required>
+                <option value="">Select a theory</option>
+            </select>
+        <label for="commentText">*Comment:</label>
+            <textarea id="commentText" name="commentText" rows="8" required></textarea>
+        <input type="submit" value="Submit Comment">
+</form>
+<div id="comment-confirmation" class="form-confirmation">
+    <h3>Your message has reached The Suriel.</h3>
+    <p>Thank you for adding to the conversation. Comments are reviewed before appearing in the Library.</p>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer>
+    <p>Copyright &copy; 2026 A Library of MAASquerading Wyrds /<a href="mailto:YOUR-EMAIL-HERE">Email Link</a></p>
+</footer>
+<script src="suriel.js"></script>
+</body>
+</html>
