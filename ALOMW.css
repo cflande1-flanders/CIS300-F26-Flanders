@@ -16,7 +16,7 @@ h4 {color: var(--accent); font-size: 1em; margin-top: 0;}
 .confirmed-name td {color: var(--amber); font-weight: bold;}
 .confirmed-text {color: var(--amber);}
 .form-confirmation {display: none;}
-.theory-image {width: 100%; height: auto;}
+.theory-image {display: block; max-width: 100%; height: auto; margin: 1em auto;}
 nav {text-align: left; padding: 0;}
 nav a {display:block; color: var(--primary); text-decoration: none; margin-bottom: 2em;}
 nav a:visited, nav a:hover, nav a:active {color: var(--primary);}
