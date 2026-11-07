@@ -1,10 +1,7 @@
-:root {--text: #CF2ABA; --background: #161616; --primary: #00D084; --secondary:
-     #0693E3; --accent: #FF6900; --red: #CF2E2E; --amber: #FCB900;}
-body {background-color: var(--background); color: var(--text); font-family: IM FELL English, serif;
-     margin: 0; padding: 0 20px;}
+:root {--text: #CF2ABA; --background: #161616; --primary: #00D084; --secondary: #0693E3; --accent: #FF6900; --red: #CF2E2E; --amber: #FCB900;}
+body {background-color: var(--background); color: var(--text); font-family: IM FELL English, serif; margin: 0; padding: 0 20px;}
 header {position: relative; text-align: center; padding: 2.8em 0; color: var(--text);}
-header img {position: absolute; width: 350px; height: 350px; left: 50%; transform: translateX(-50%);
-     top: 0;}
+header img {position: absolute; width: 350px; height: 350px; left: 50%; transform: translateX(-50%); top: 0;}
 h1 {font-family: "gioviale", sans-serif; font-weight: 700; font-style: normal; font-size: 3.5em;}
 .full-title {display: none;}
 .short-title {display: inline;}
@@ -19,27 +16,23 @@ h4 {color: var(--accent); font-size: 1em; margin-top: 0;}
 .confirmed-name td {color: var(--amber); font-weight: bold;}
 .confirmed-text {color: var(--amber);}
 .form-confirmation {display: none;}
+.theory-image {width: 100%; height: auto;}
 nav {text-align: left; padding: 0;}
 nav a {display:block; color: var(--primary); text-decoration: none; margin-bottom: 2em;}
 nav a:visited, nav a:hover, nav a:active {color: var(--primary);}
 main {padding: 0;}
 aside {border: 1px solid var(--primary); padding: 15px;}
-#forgotten-melody-countdown {border: 1px solid var(--secondary); padding: 15px; margin-bottom: 15px;
-    text-align: center;}
+#forgotten-melody-countdown {border: 1px solid var(--secondary); padding: 15px; margin-bottom: 15px; text-align: center;}
 #forgotten-melody-countdown h2 {margin: 0 0 0.5em 0;}
 #countdown {font-size: 1.3em; margin: 0;}
 #theory-form, #comment-form {display: none;}
 #theory-form form, #comment-form form {display: flex; flex-direction: column; gap: 0.5em; margin-top: 1em;}
-#theory-form input, #theory-form textarea, #comment-form input, #comment-form textarea {background-color: 
-     var(--background); color: var(--text); border: 1px solid var(--secondary); padding: 0.5em; font-family: inherit;
-    font-size: 1em;}
+#theory-form input, #theory-form textarea, #comment-form input, #comment-form textarea {background-color: var(--background); color: var(--text); border: 1px solid var(--secondary); padding: 0.5em; font-family: inherit; font-size: 1em;}
 #theory-form input, #theory-form textarea, #theory-form select, #comment-form input, #comment-form textarea,
-#comment-form select {background-color: var(--background); color: var(--text); border: 1px solid var(--secondary);
-    padding: 0.5em; font-family: inherit; font-size: 1em;}
+#comment-form select {background-color: var(--background); color: var(--text); border: 1px solid var(--secondary); padding: 0.5em; font-family: inherit; font-size: 1em;}
 #additional-books {display: none; flex-direction: column; gap: 0.5em;}
 #additional-books select, #additional-books input {width: 100%; box-sizing: border-box;}
-summary {cursor: pointer; text-decoration: underline; list-style: none; text-align: right; color:
-     var(--amber);}
+summary {cursor: pointer; text-decoration: underline; list-style: none; text-align: right; color: var(--amber);}
 summary::-webkit-details-marker {display: none;}
 summary .less {display: none;}
 details[open] {display: flex; flex-direction: column;}
