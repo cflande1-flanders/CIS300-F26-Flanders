@@ -1,6 +1,6 @@
 document.getElementById("latest-update").innerHTML = `
     <h2 class="section-label">Latest Update</h2>
-    <h4>A Court of Splintered Harmony Countdown</h4>
+   <p class="update-title">A Court of Splintered Harmony Countdown</p>
 
     <p>7. Feyre - "My body wouldn't move. Couldn't move. I could do nothing to help him, nothing at all, and I would 
     die from it, this despair and agony. Please, I tried to beg the darkness. Please. Anything. I'd give anything 

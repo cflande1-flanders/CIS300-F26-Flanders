@@ -16,7 +16,9 @@ h4 {color: var(--accent); font-size: 1em; margin-top: 0;}
 .confirmed-name td {color: var(--amber); font-weight: bold;}
 .confirmed-text {color: var(--amber);}
 .form-confirmation {display: none;}
+.update-title {color: var(--accent); font-size: 1em; font-weight: bold; margin-top: 0;}
 .theory-image {display: block; max-width: 100%; height: auto; margin: 1em auto;}
+.unmaasking-page {background-color: var(--background); background-image: url("mask.png"); background-repeat: no-repeat; background-position: center 350px; background-size: 900px auto; background-attachment: fixed;}
 nav {text-align: left; padding: 0;}
 nav a {display:block; color: var(--primary); text-decoration: none; margin-bottom: 2em;}
 nav a:visited, nav a:hover, nav a:active {color: var(--primary);}
@@ -62,6 +64,7 @@ footer a {color: var(--amber);}
 nav {grid-column: 1 / -1;}}
 @media (min-width: 1024px) {
 .columns {grid-template-columns: 140px 1fr 220px;}
+@media (max-width: 599px) {.unmaasking-page {background-attachment: scroll; background-size: 100% auto; background-position: center 300px;}}
 nav {grid-column: auto;}
 .desktop-nav {text-align: left;}
 .desktop-nav a {display: block; margin: 0 0 2em 0;}}
