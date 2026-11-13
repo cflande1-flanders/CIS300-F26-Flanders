@@ -19,6 +19,7 @@ h4 {color: var(--accent); font-size: 1em; margin-top: 0;}
 .update-title {color: var(--accent); font-size: 1em; font-weight: bold; margin-top: 0;}
 .theory-image {display: block; max-width: 100%; height: auto; margin: 1em auto;}
 .unmaasking-page {background-color: var(--background); /* background-image: url("mask.png") */; background-repeat: no-repeat; background-position: center 350px; background-size: 900px auto; background-attachment: fixed;}
+.theory-video {display: block; width: 100%; max-width: 700px; aspect-ratio: 16 / 9; margin: 1em auto;}
 nav {text-align: left; padding: 0;}
 nav a {display:block; color: var(--primary); text-decoration: none; margin-bottom: 2em;}
 nav a:visited, nav a:hover, nav a:active {color: var(--primary);}
